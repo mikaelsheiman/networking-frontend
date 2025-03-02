@@ -1,16 +1,19 @@
 // src/components/Login.tsx
 import React, { useState } from "react";
 import "../style/LoginPage.sass";
+import { useNavigate } from "react-router-dom";
 
 export const LoginPage = () => {
   const [username, setUsername] = useState<string>("");
   const [password, setPassword] = useState<string>("");
+  const navigate = useNavigate();
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle login logic here
     console.log("Username:", username);
     console.log("Password:", password);
+    navigate("chat");
   };
 
   return (
