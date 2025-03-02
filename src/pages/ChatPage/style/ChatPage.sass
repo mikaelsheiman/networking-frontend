@@ -1,0 +1,56 @@
+@use '../../../shared/style/Variables.sass' as v
+
+.chat-container
+    max-width: 500px
+    margin: 0 auto
+    padding: 20px
+    border: 1px solid v.$border-color
+    border-radius: 10px
+    background-color: v.$background-color
+    display: flex
+    flex-direction: column
+    height: 80vh
+    color: v.$text-color
+
+.messages-container
+    flex: 1
+    overflow-y: auto
+    margin-bottom: 15px
+    padding: 10px
+    border: 1px solid v.$border-color
+    border-radius: 5px
+    background-color: white
+
+    .message
+        margin-bottom: 10px
+        padding: 8px
+        border-radius: 5px
+        background-color: v.$message-bg-color
+
+    .sender
+        font-weight: bold
+        color: v.$message-sender-color
+        margin-right: 5px
+
+    .text
+
+.message-form
+    display: flex
+    gap: 10px
+
+    input
+        flex: 1
+        padding: 10px
+        border: 1px solid v.$border-color
+        border-radius: 5px
+
+    button
+        padding: 10px 20px
+        background-color: v.$primary-color
+        color: white
+        border: none
+        border-radius: 5px
+        cursor: pointer
+
+    &:hover
+        background-color: v.$hover-color

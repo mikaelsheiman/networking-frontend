@@ -1,0 +1,41 @@
+@use '../../../shared/style/Variables.sass' as v
+
+.login-container
+    align-self: center
+    width: 300px
+    margin: auto
+    padding: 20px
+    border: 1px solid v.$border-color
+    border-radius: 5px
+    background-color: v.$background-color
+    color: white
+
+h2
+    text-align: center
+    margin-bottom: 20px
+
+.form-group
+    margin-bottom: 15px
+
+    label
+        display: block
+        margin-bottom: 5px
+
+    input
+        width: 100%
+        padding: 8px
+        box-sizing: border-box
+        border: 1px solid v.$border-color
+        border-radius: 4px
+
+button
+    width: 100%
+    padding: 10px
+    background-color: v.$primary-color
+    color: white
+    border: none
+    border-radius: 5px
+    cursor: pointer
+
+    &:hover
+        background-color: v.$hover-color
